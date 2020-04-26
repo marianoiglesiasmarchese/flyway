@@ -23,12 +23,8 @@ class DataLoader() {
     fun runAfterContextStarts(
         bookRepository: BookRepository
     ) = CommandLineRunner {
-        print("hello")
-        val bookList = mutableListOf(
-            Book(name = "book_1"),
-            Book(name = "book_2")
-        )
-        bookRepository.saveAll(bookList)
-        print(bookRepository.findAll().toString())
+        println()
+        println("books >>>")
+        println(bookRepository.findAll().toString())
     }
 }
