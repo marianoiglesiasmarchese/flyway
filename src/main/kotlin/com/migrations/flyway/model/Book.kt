@@ -8,7 +8,8 @@ import javax.persistence.Id
 @Entity
 data class Book(
     @Id
-    @GeneratedValue( strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Int? = null,
-    var name: String
+    var name: String,
+    var description: String?
 )
