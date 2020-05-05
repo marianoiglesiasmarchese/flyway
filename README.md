@@ -30,7 +30,7 @@ Flyway supports the following basic commands to manage database migrations.
 * **Validate**: Validates current database schema against available migrations.
 * **Repair**: Repairs metadata table.
 * **Clean**: Drops all objects in a configured schema. All database objects are dropped. Of course, you should never use clean on any production database.
-* **Undo**: Undoes the most recently applied versioned migration. If `target` is specified, Flyway will attempt to undo versioned migrations in the order they were applied until it hits one with a version below the target. If `group` is active, Flyway will attempt to undo all these migrations within a single transaction.
+* **Undo[NOT SUPPORTED FOR COMMUNITY VERSION]**: Undoes the most recently applied versioned migration. If `target` is specified, Flyway will attempt to undo versioned migrations in the order they were applied until it hits one with a version below the target. If `group` is active, Flyway will attempt to undo all these migrations within a single transaction.
 
 ## Using it
 
